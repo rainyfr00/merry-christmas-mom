@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>A Cozy Journey — Pixel Story</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- You can add a pixel font (e.g., Press Start 2P) for extra retro feel -->
+</head>
+<body>
+  <div id="game-root">
+    <div id="start-screen" class="centered-screen">
+      <h1 class="title">A Christmas Journey</h1>
+      <button id="start-btn" class="btn">Start Journey</button>
+      <p class="hint">Merry Christmas Mom</p>
+    </div>
+
+    <div id="scene-screen" class="hidden">
+      <div id="viewport">
+        <canvas id="game-canvas" width="160" height="144"></canvas>
+      </div>
+
+      <div id="ui">
+        <div id="textbox" class="textbox"></div>
+        <div class="controls">
+          <button id="next-btn" class="btn small">Next</button>
+          <button id="skip-btn" class="btn small">Skip</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
